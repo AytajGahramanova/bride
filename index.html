@@ -68,7 +68,45 @@
     <!-- nav start -->
     <nav>
       <div class="container">
-        <ul class="nav-links">
+        <div class="responsive-nav-links d-flex d-lg-none">
+          <i
+            class="fa-solid fa-bars"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#staticBackdrop"
+          ></i>
+        </div>
+
+        <div
+          class="offcanvas offcanvas-start"
+          data-bs-backdrop="static"
+          tabindex="-1"
+          id="staticBackdrop"
+          aria-labelledby="staticBackdropLabel"
+        >
+          <div class="offcanvas-header">
+            <div class="header-logo">
+              <a href="index.html">
+                <img src="/assets/images/home/logo.svg" alt="logo"
+              /></a>
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="d-flex flex-column">
+              <li><a href="services.html">Xidmətlər</a></li>
+              <li><a href="sales.html">Endirim</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="contact.html">Əlaqə</a></li>
+              <li><a href="delivery.html">Çatdırılma</a></li>
+            </ul>
+          </div>
+        </div>
+        <ul class="nav-links d-none d-lg-flex">
           <li><a href="services.html">Xidmətlər</a></li>
           <li><a href="sales.html">Endirim</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
@@ -178,7 +216,7 @@
                 />
               </a>
               <div class="item-absolute position-absolute">
-                <p>Aurora Headset</p>
+                <p class="main-p">Aurora Headset</p>
                 <button class="btn btn-primary">Buy Now</button>
               </div>
             </div>
@@ -331,16 +369,239 @@
           <div class="title mb-4">
             <h4>The Best Offers</h4>
           </div>
-          <div class="products-wrapper d-flex gap-2">
+          <div class="d-flex justify-content-end align-items-center">
+            <a href="shop.html" class="more-products">
+              <button>More Products</button>
+            </a>
+          </div>
+          <div class="products-wrapper d-flex gap-3">
             <div class="product">
-              <div>
-                <img
-                  src="assets/images/home/products/apple-macbook-pro-16-silver-1.jpg.png"
-                  alt="product"
-                />
+              <div class="top d-flex justify-content-between mb-3">
+                <div class="d-flex flex-column gap-1">
+                  <div class="product-sale-price">
+                    <button>-10%</button>
+                  </div>
+                </div>
+                <div class="favorite">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
               </div>
-              <div>
-                <p>salam</p>
+              <div class="d-flex justify-content-center">
+                <a href="product-detail.html"
+                  ><img
+                    src="assets/images/home/products/product-one.png"
+                    alt="product"
+                /></a>
+              </div>
+              <div class="product-content">
+                <p>
+                  <a href="product-detail.html">Apple MacBook Pro 16″ M1 Pro</a>
+                </p>
+                <span class="mb-2">Apple MacBook</span>
+                <div class="mb-2">
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i
+                  ><i class="fa-solid fa-star" style="color: #ffd43b"></i
+                  ><i class="fa-solid fa-star" style="color: #ffd43b"></i
+                  ><i class="fa-solid fa-star" style="color: #ffd43b"></i
+                  ><i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                </div>
+                <div class="stock d-flex gap-2 align-items-center">
+                  <i class="fa-solid fa-check" style="color: #4690c8"></i>
+                  <p>In stock</p>
+                </div>
+                <h5>2000 ₼</h5>
+                <div
+                  class="d-flex justify-content-center align-items-center mt-3"
+                >
+                  <a href="cart.html">
+                    <button class="btn btn-primary">Səbətə əlavə et</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="top d-flex justify-content-between mb-3">
+                <div class="d-flex flex-column gap-1">
+                  <div class="new-product-badge">
+                    <button>New</button>
+                  </div>
+                </div>
+                <div class="favorite">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center">
+                <a href="product-detail.html"
+                  ><img
+                    src="assets/images/home/products/product-one.png"
+                    alt="product"
+                /></a>
+              </div>
+              <div class="product-content">
+                <p>
+                  <a href="product-detail.html">Apple MacBook Pro 16″ M1 Pro</a>
+                </p>
+                <span class="mb-2">Apple MacBook</span>
+                <div class="mb-2">
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i
+                  ><i class="fa-solid fa-star" style="color: #ffd43b"></i
+                  ><i class="fa-solid fa-star" style="color: #ffd43b"></i
+                  ><i class="fa-solid fa-star" style="color: #ffd43b"></i
+                  ><i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                </div>
+                <div class="stock d-flex gap-2 align-items-center">
+                  <i class="fa-solid fa-check" style="color: #4690c8"></i>
+                  <p>In stock</p>
+                </div>
+                <h5>2000 ₼</h5>
+                <div
+                  class="d-flex justify-content-center align-items-center mt-3"
+                >
+                  <a href="cart.html">
+                    <button class="btn btn-primary">Səbətə əlavə et</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="top d-flex justify-content-between mb-3">
+                <div class="d-flex flex-column gap-1">
+                  <div class="product-sale-price">
+                    <button>-10%</button>
+                  </div>
+                  <div class="new-product-badge">
+                    <button>New</button>
+                  </div>
+                </div>
+                <div class="favorite">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center">
+                <a href="product-detail.html"
+                  ><img
+                    src="assets/images/home/products/product-one.png"
+                    alt="product"
+                /></a>
+              </div>
+              <div class="product-content">
+                <p>
+                  <a href="product-detail.html">Apple MacBook Pro 16″ M1 Pro</a>
+                </p>
+                <span class="mb-2">Apple MacBook</span>
+                <div class="mb-2">
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i
+                  ><i class="fa-solid fa-star" style="color: #ffd43b"></i
+                  ><i class="fa-solid fa-star" style="color: #ffd43b"></i
+                  ><i class="fa-solid fa-star" style="color: #ffd43b"></i
+                  ><i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                </div>
+                <div class="stock d-flex gap-2 align-items-center">
+                  <i class="fa-solid fa-check" style="color: #4690c8"></i>
+                  <p>In stock</p>
+                </div>
+                <h5>2000 ₼</h5>
+                <div
+                  class="d-flex justify-content-center align-items-center mt-3"
+                >
+                  <a href="cart.html">
+                    <button class="btn btn-primary">Səbətə əlavə et</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="top d-flex justify-content-between mb-3">
+                <div class="d-flex flex-column gap-1">
+                  <div class="product-sale-price">
+                    <button>-10%</button>
+                  </div>
+                  <div class="new-product-badge">
+                    <button>New</button>
+                  </div>
+                </div>
+                <div class="favorite">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center">
+                <a href="product-detail.html"
+                  ><img
+                    src="assets/images/home/products/product-one.png"
+                    alt="product"
+                /></a>
+              </div>
+              <div class="product-content">
+                <p>
+                  <a href="product-detail.html">Apple MacBook Pro 16″ M1 Pro</a>
+                </p>
+                <span class="mb-2">Apple MacBook</span>
+                <div class="mb-2">
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i
+                  ><i class="fa-solid fa-star" style="color: #ffd43b"></i
+                  ><i class="fa-solid fa-star" style="color: #ffd43b"></i
+                  ><i class="fa-solid fa-star" style="color: #ffd43b"></i
+                  ><i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                </div>
+                <div class="stock d-flex gap-2 align-items-center">
+                  <i class="fa-solid fa-check" style="color: #4690c8"></i>
+                  <p>In stock</p>
+                </div>
+                <h5>2000 ₼</h5>
+                <div
+                  class="d-flex justify-content-center align-items-center mt-3"
+                >
+                  <a href="cart.html">
+                    <button class="btn btn-primary">Səbətə əlavə et</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="top d-flex justify-content-between mb-3">
+                <div class="d-flex flex-column gap-1">
+                  <div class="product-sale-price">
+                    <button>-10%</button>
+                  </div>
+                  <div class="new-product-badge">
+                    <button>New</button>
+                  </div>
+                </div>
+                <div class="favorite">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center">
+                <a href="product-detail.html"
+                  ><img
+                    src="assets/images/home/products/product-one.png"
+                    alt="product"
+                /></a>
+              </div>
+              <div class="product-content">
+                <p>
+                  <a href="product-detail.html">Apple MacBook Pro 16″ M1 Pro</a>
+                </p>
+                <span class="mb-2">Apple MacBook</span>
+                <div class="mb-2">
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i
+                  ><i class="fa-solid fa-star" style="color: #ffd43b"></i
+                  ><i class="fa-solid fa-star" style="color: #ffd43b"></i
+                  ><i class="fa-solid fa-star" style="color: #ffd43b"></i
+                  ><i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                </div>
+                <div class="stock d-flex gap-2 align-items-center">
+                  <i class="fa-solid fa-check" style="color: #4690c8"></i>
+                  <p>In stock</p>
+                </div>
+                <h5>2000 ₼</h5>
+                <div
+                  class="d-flex justify-content-center align-items-center mt-3"
+                >
+                  <a href="cart.html">
+                    <button class="btn btn-primary">Səbətə əlavə et</button>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
