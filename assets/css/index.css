@@ -343,6 +343,8 @@ nav {
 
 /* products section start */
 .products-section {
+    margin-bottom: 60px;
+
     .more-products {
         button {
             background-color: #e1ebff;
@@ -356,7 +358,8 @@ nav {
     }
 
     .product {
-        /* width: 100%; */
+        width: 100%;
+        max-width: 250px;
         background-color: #fff;
         padding: 20px;
         border-radius: 15px;
@@ -433,6 +436,106 @@ nav {
 
 /* products section end */
 
+/* discounted products section start */
+
+.discounted-products-section {
+    .nav-tabs {
+        --bs-nav-tabs-border-color: transparent !important
+    }
+
+    .fade:not(.show) {
+        display: none;
+    }
+
+    .nav-tabs .nav-link.active {
+        color: var(--bs-nav-tabs-link-active-color);
+        background-color: transparent !important;
+        border: none !important;
+    }
+
+    .nav-link:hover {
+        border: none !important;
+    }
+
+    .product {
+        width: 100%;
+        max-width: 250px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 15px;
+        transition: all .3s;
+
+        &:hover {
+            box-shadow: 2px 2px 20px 0px #a5a5a5;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .product-content {
+            margin-top: 20px;
+
+            p {
+                font-size: 17px;
+                font-weight: 500;
+            }
+
+            span {
+                color: #a5a5a5;
+                font-size: 15px;
+            }
+        }
+
+        .top {
+            width: 100%;
+            height: 60px;
+
+            .fa-heart {
+                font-size: 20px;
+                cursor: pointer;
+            }
+        }
+
+        .product-sale-price {
+            button {
+                border: none;
+                background-color: #1c61e7;
+                padding: 5px 10px;
+                min-width: 50px;
+                color: #fff;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 1.2;
+                text-transform: uppercase;
+                border-radius: 12px;
+            }
+        }
+
+        .new-product-badge {
+            button {
+                border: none;
+                background-color: #438E44;
+                ;
+                padding: 5px 10px;
+                min-width: 50px;
+                color: #fff;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 1.2;
+                border-radius: 12px;
+                text-transform: uppercase;
+            }
+        }
+
+    }
+}
+
+/* discounted products section end */
+
 /* !responsive start */
 @media (max-width:1285px) {
     .slider-section {
@@ -451,13 +554,17 @@ nav {
     }
 
     .products-wrapper {
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
         justify-content: center;
 
     }
 }
 
 @media (max-width:992px) {
+    body {
+        position: relative;
+    }
+
     .header {
         .container {
             padding: 23px !important;
@@ -471,6 +578,10 @@ nav {
 
     nav {
         padding: 10px 0px;
+        position: fixed;
+        z-index: 10;
+        width: 100%;
+        bottom: 0;
 
         .container {
             padding: 0px 23px;
@@ -491,22 +602,36 @@ nav {
 
     }
 
-    .main-swiper {
-        .swiper-pagination-bullets {
-            display: none !important;
-        }
+    .slider-section {
+        padding-top: 0;
 
-        .main-slider-content {
-            left: 15% !important;
-
-            p {
-                font-size: 14px;
+        .main-swiper {
+            .swiper-pagination-bullets {
+                display: none !important;
             }
 
-            h4 {
-                font-size: 30px !important;
+            .main-slider-content {
+                left: 15% !important;
+
+                p {
+                    font-size: 14px;
+                }
+
+                h4 {
+                    font-size: 30px !important;
+                }
             }
         }
+    }
+
+    .products-section {
+        .product {
+            width: calc(33.333% - 1rem);
+        }
+
+        /* .products-wrapper {
+            justify-content: center !important;
+        } */
     }
 }
 
@@ -528,6 +653,12 @@ nav {
             .details {
                 font-size: 11px;
             }
+        }
+    }
+
+    .products-section {
+        .product {
+            width: calc(50% - 0.5rem);
         }
     }
 }
