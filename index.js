@@ -6,9 +6,9 @@ var swiper = new Swiper(".main-swiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
-  // autoplay: {
-  //   delay: 2000,
-  // },
+  autoplay: {
+    delay: 2000,
+  },
 });
 
 // products-swiper

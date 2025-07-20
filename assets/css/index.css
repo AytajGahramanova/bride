@@ -222,7 +222,7 @@ nav {
 
         .swiper-content {
             .main-img {
-                background-image: url(../images/home/slider-section/slider-main-image-1.jpg);
+                background-image: url(../images/home/slider-section/slider-img-1.jpg);
                 background-size: cover;
                 background-position: center center;
                 width: 100%;
@@ -240,11 +240,11 @@ nav {
 
                 h4 {
                     font-size: 36px;
-                    color: #fff;
+                    color: #000;
                 }
 
                 p {
-                    color: #DBD3DC;
+                    color: #000;
                     margin-top: 10px;
                 }
             }
@@ -273,12 +273,20 @@ nav {
 
         .item.one {
             border-radius: 15px;
+            background-color: #587558;
 
             img {
                 width: 100%;
                 /* aspect-ratio: 675 / 277; */
                 border-radius: 15px;
                 object-fit: cover;
+            }
+
+            .bride-img {
+                width: 100%;
+                aspect-ratio: 675 / 277;
+                border-radius: 15px;
+                object-fit: contain;
             }
         }
 
@@ -287,7 +295,7 @@ nav {
             left: 5%;
 
             .main-p {
-                color: #fff;
+                color: #000;
                 font-size: 28px;
                 margin-bottom: 20px;
             }
@@ -315,16 +323,20 @@ nav {
 
     .product {
         border-radius: 10px;
+        background-color: white;
+        padding: 10px;
 
         img {
             width: 100%;
             object-fit: contain;
             border-radius: 10px;
-            /* transition: all .3s; */
+            aspect-ratio: 150/150;
+            height: unset;
+            transition: all .3s;
 
-            /* &:hover {
-                scale: 1.1;
-            } */
+            &:hover {
+                scale: 1.06;
+            }
         }
 
         .product-content {
