@@ -32,11 +32,11 @@
       <div class="container">
         <div class="header-logo">
           <a href="index.html">
-            <img src="/assets/images/home/logo.svg" alt="logo"
+            <img src="/assets/images/home/logo.png" alt="logo"
           /></a>
         </div>
         <div class="header-search">
-          <input type="text" placeholder="Search for products" />
+          <input type="text" placeholder="Axtar" />
           <button type="submit">
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
@@ -68,12 +68,15 @@
     <!-- nav start -->
     <nav>
       <div class="container">
-        <div class="responsive-nav-links d-flex d-lg-none">
+        <div
+          class="responsive-nav-links d-flex flex-column align-items-center d-lg-none"
+        >
           <i
             class="fa-solid fa-bars"
             data-bs-toggle="offcanvas"
             data-bs-target="#staticBackdrop"
           ></i>
+          <p class="alt-text">Menu</p>
         </div>
 
         <div
@@ -84,9 +87,9 @@
           aria-labelledby="staticBackdropLabel"
         >
           <div class="offcanvas-header">
-            <div class="header-logo">
+            <div class="header-logo-menu">
               <a href="index.html">
-                <img src="/assets/images/home/logo.svg" alt="logo"
+                <img src="/assets/images/home/logo.png" alt="logo"
               /></a>
             </div>
             <button
@@ -130,26 +133,36 @@
               </ul>
             </div>
           </div>
-          <div class="icon user">
-            <a href="">
-              <i class="fa-regular fa-user"></i>
-            </a>
-          </div>
-          <div class="icon wishlist">
-            <a href="">
-              <i class="fa-regular fa-heart"></i>
-            </a>
-            <div class="count">
-              <p>0</p>
+          <div class="wrapper d-flex align-items-center flex-column">
+            <div class="icon user">
+              <a href="">
+                <i class="fa-regular fa-user"></i>
+              </a>
             </div>
+            <p class="alt-text">My account</p>
           </div>
-          <div class="icon cart">
-            <a href="">
-              <i class="fa-regular fa-money-bill-1"></i>
-            </a>
-            <div class="count">
-              <p>0</p>
+          <div class="wrapper d-flex align-items-center flex-column">
+            <div class="icon wishlist">
+              <a href="">
+                <i class="fa-regular fa-heart"></i>
+              </a>
+              <div class="count">
+                <p>0</p>
+              </div>
             </div>
+            <p class="alt-text" >Wishlist</p>
+          </div>
+
+          <div class="wrapper d-flex align-items-center flex-column">
+            <div class="icon cart">
+              <a href="">
+                <i class="fa-regular fa-money-bill-1"></i>
+              </a>
+              <div class="count">
+                <p>0</p>
+              </div>
+            </div>
+            <p class="alt-text">Cart</p>
           </div>
         </div>
       </div>
@@ -166,40 +179,40 @@
                 <div class="swiper-content">
                   <div class="main-img position-relative"></div>
                   <div class="main-slider-content position-absolute">
-                    <h4>Apple Shopping Event</h4>
+                    <h4>Zövqünüzə uyğun gəlikliklər</h4>
                     <p>Shop great deals on MacBook, iPad, iPhone and more.</p>
                     <a
                       href="sales.html"
                       class="btn btn-primary d-flex justify-content-center mt-2"
-                      >Shop Now</a
+                      >Məhsullar</a
                     >
                   </div>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="swiper-content">
-                  <div class="main-img position-relative"></div>
+                  <div class="second-img position-relative"></div>
                   <div class="main-slider-content position-absolute">
-                    <h4>Apple Shopping Event</h4>
+                    <h4>Gəlin gülü ilə seçilər</h4>
                     <p>Shop great deals on MacBook, iPad, iPhone and more.</p>
                     <a
                       href="sales.html"
                       class="btn btn-primary d-flex justify-content-center mt-2"
-                      >Shop Now</a
+                      >Məhsullar</a
                     >
                   </div>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="swiper-content">
-                  <div class="main-img position-relative"></div>
+                  <div class="third-img position-relative"></div>
                   <div class="main-slider-content position-absolute">
-                    <h4>Apple Shopping Event</h4>
-                    <p>Shop great deals on MacBook, iPad, iPhone and more.</p>
+                    <h4>İstənilən tərzdə dekor xidmətləri</h4>
+                    <p>Eleqant, klassik, boho</p>
                     <a
                       href="sales.html"
                       class="btn btn-primary d-flex justify-content-center mt-2"
-                      >Shop Now</a
+                      >Məhsullar</a
                     >
                   </div>
                 </div>
@@ -217,32 +230,34 @@
                 />
               </a>
               <div class="item-absolute position-absolute">
-                <p class="main-p">Aurora Headset</p>
+                <p class="main-p">
+                  Gəlinliyini ən az 30 gün əvvəl sifariş et, 10% endirim qazan
+                </p>
                 <button class="btn btn-primary">Buy Now</button>
               </div>
             </div>
             <div class="bottom d-flex gap-2">
-              <div class="item one position-relative">
-                <a href="shop.html">
+              <div class="slider-car position-relative">
+                <div class="image">
                   <img
-                    src="assets/images/home/slider-section/new-dualsense.jpg.webp"
+                    src="assets/images/home/slider-section/slider-section-car.jpg"
                     alt="img"
                   />
-                </a>
+                </div>
                 <div class="item-absolute position-absolute">
                   <p class="p-size">Aurora Headset</p>
                   <button class="details">View Details</button>
                 </div>
               </div>
-              <div class="item one position-relative">
-                <a href="shop.html">
+              <div class="slider-camera position-relative">
+                <div class="image">
                   <img
-                    src="assets/images/home/slider-section/instant-cameras.jpg.webp"
+                    src="assets/images/home/slider-section/slider-img-2.png"
                     alt="img"
                   />
-                </a>
+                </div>
                 <div class="item-absolute position-absolute">
-                  <p class="p-size">Aurora Headset</p>
+                  <p class="p-size">Fotoqraf və videoqraf xidmətləri</p>
                   <button class="details">View Details</button>
                 </div>
               </div>
