@@ -41,3 +41,11 @@ var swiper = new Swiper(".products-swiper", {
     },
   },
 });
+
+// responsive-search
+let magnifyingGlass = document.querySelector(".magnifying-glass");
+let responsiveSearch = document.querySelector(".responsive-search");
+
+magnifyingGlass.addEventListener("click", () => {
+  responsiveSearch.classList.toggle("responsive-search-active");
+});

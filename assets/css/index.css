@@ -123,10 +123,6 @@ main {
                 }
             }
         }
-
-        .menu-and-logo {
-            gap: 10rem;
-        }
     }
 
     .header-logo-menu {
@@ -207,10 +203,10 @@ nav {
 
             .cart {
                 position: relative;
-                background-color: #1c61e7;
+                background-color: #fff;
 
                 i {
-                    color: #fff;
+                    color: #000;
                 }
             }
 
@@ -239,6 +235,49 @@ nav {
 }
 
 /* nav end */
+
+/* responsive-search start */
+.responsive-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 50%;
+    height: 160px;
+    position: fixed;
+    bottom: 8%;
+    left: 15%;
+    background-color: #587558;
+    border-radius: 10px;
+    z-index: 9;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all .5s;
+
+
+    input {
+        padding: 4px 20px;
+        outline: none;
+        border: none;
+        background: transparent;
+        color: #fff;
+        font-size: 17px;
+        width: 100%;
+
+        &::placeholder {
+            color: #fff;
+            font-size: 17px;
+
+        }
+    }
+}
+
+.responsive-search-active {
+    opacity: 1 !important;
+    transform: translateY(-1%);
+}
+
+/* responsive-search end */
 
 /* slider section start */
 .slider-section {
@@ -321,12 +360,15 @@ nav {
         .item.one {
             border-radius: 15px;
             background-color: #587558;
+            cursor: pointer;
 
             img {
                 width: 100%;
                 /* aspect-ratio: 675 / 277; */
                 border-radius: 15px;
                 object-fit: cover;
+                transition: all .3s;
+                padding: 10px;
             }
 
             .bride-img {
@@ -334,6 +376,10 @@ nav {
                 aspect-ratio: 675 / 277;
                 border-radius: 15px;
                 object-fit: contain;
+            }
+
+            &:hover img {
+                scale: 1.06;
             }
         }
 
@@ -366,9 +412,11 @@ nav {
             border-radius: 15px;
             position: relative;
             width: 100%;
+            cursor: pointer;
 
             .image {
-                margin-left: 10rem;
+                margin-left: 9rem;
+                transition: all .3s;
 
                 img {
                     width: 100%;
@@ -376,6 +424,10 @@ nav {
                     height: 150px;
                     object-fit: contain;
                 }
+            }
+
+            &:hover .image {
+                scale: 1.06;
             }
         }
 
@@ -671,6 +723,11 @@ nav {
         }
     }
 
+    .menu-and-logo {
+        width: 100%;
+        justify-content: space-between;
+    }
+
     nav {
         padding: 10px 0px;
         position: fixed;
@@ -727,10 +784,6 @@ nav {
         .product {
             width: calc(33.333% - 1rem);
         }
-
-        /* .products-wrapper {
-            justify-content: center !important;
-        } */
     }
 }
 

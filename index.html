@@ -46,6 +46,7 @@
               <img src="/assets/images/home/logo.png" alt="logo"
             /></a>
           </div>
+          <div></div>
         </div>
 
         <div
@@ -78,7 +79,7 @@
             </ul>
           </div>
         </div>
-        <div class="header-search">
+        <div class="header-search d-none d-lg-flex">
           <input type="text" placeholder="Axtar" />
           <button type="submit">
             <i class="fa-solid fa-magnifying-glass"></i>
@@ -141,7 +142,9 @@
             </div>
             <!-- <p class="alt-text">My account</p> -->
           </div>
-          <div class="wrapper d-flex align-items-center flex-column">
+          <div
+            class="wrapper d-flex align-items-center flex-column d-none d-lg-flex"
+          >
             <div class="icon wishlist">
               <a href="">
                 <i class="fa-regular fa-heart"></i>
@@ -150,7 +153,16 @@
                 <p>0</p>
               </div>
             </div>
-            <!-- <p class="alt-text" >Wishlist</p> -->
+          </div>
+
+          <div
+            class="wrapper d-flex align-items-center flex-column d-flex d-lg-none"
+          >
+            <div class="icon whatsapp">
+              <a href="tel:+994557150540">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </div>
           </div>
 
           <div class="wrapper d-flex align-items-center flex-column">
@@ -162,12 +174,25 @@
                 <p>0</p>
               </div>
             </div>
-            <!-- <p class="alt-text">Cart</p> -->
+          </div>
+
+          <div
+            class="wrapper d-flex align-items-center flex-column d-flex d-lg-none"
+          >
+            <div class="icon magnifying-glass">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
           </div>
         </div>
       </div>
     </nav>
     <!-- nav end -->
+
+    <!-- responsive-search start -->
+     <div class="responsive-search">
+      <input type="text" placeholder="Axtar">
+     </div>
+    <!-- responsive-search end -->
 
     <main>
       <!-- slider section start -->
@@ -271,7 +296,7 @@
       <section class="popular-products-section">
         <div class="container">
           <div class="title mb-4 d-flex justify-content-center">
-            <h4>Çox Satılanlar</h4>
+            <h4>Kateqoriya</h4>
           </div>
           <div class="swiper products-swiper">
             <div class="swiper-wrapper">
