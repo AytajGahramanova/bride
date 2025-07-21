@@ -30,10 +30,53 @@
     <!-- header start -->
     <header class="header">
       <div class="container">
-        <div class="header-logo">
-          <a href="index.html">
-            <img src="/assets/images/home/logo.png" alt="logo"
-          /></a>
+        <div class="menu-and-logo d-flex align-items-center">
+          <div
+            class="responsive-nav-links d-flex flex-column align-items-center d-lg-none"
+          >
+            <i
+              class="fa-solid fa-bars"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#staticBackdrop"
+            ></i>
+            <!-- <p class="alt-text">Menu</p> -->
+          </div>
+          <div class="header-logo">
+            <a href="index.html">
+              <img src="/assets/images/home/logo.png" alt="logo"
+            /></a>
+          </div>
+        </div>
+
+        <div
+          class="offcanvas offcanvas-start"
+          data-bs-backdrop="static"
+          tabindex="-1"
+          id="staticBackdrop"
+          aria-labelledby="staticBackdropLabel"
+        >
+          <div class="offcanvas-header">
+            <div class="header-logo-menu">
+              <a href="index.html">
+                <img src="/assets/images/home/logo.png" alt="logo"
+              /></a>
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="d-flex flex-column">
+              <li><a href="services.html">Xidmətlər</a></li>
+              <li><a href="sales.html">Endirim</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="contact.html">Əlaqə</a></li>
+              <li><a href="delivery.html">Çatdırılma</a></li>
+            </ul>
+          </div>
         </div>
         <div class="header-search">
           <input type="text" placeholder="Axtar" />
@@ -68,47 +111,6 @@
     <!-- nav start -->
     <nav>
       <div class="container">
-        <div
-          class="responsive-nav-links d-flex flex-column align-items-center d-lg-none"
-        >
-          <i
-            class="fa-solid fa-bars"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#staticBackdrop"
-          ></i>
-          <p class="alt-text">Menu</p>
-        </div>
-
-        <div
-          class="offcanvas offcanvas-start"
-          data-bs-backdrop="static"
-          tabindex="-1"
-          id="staticBackdrop"
-          aria-labelledby="staticBackdropLabel"
-        >
-          <div class="offcanvas-header">
-            <div class="header-logo-menu">
-              <a href="index.html">
-                <img src="/assets/images/home/logo.png" alt="logo"
-              /></a>
-            </div>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="d-flex flex-column">
-              <li><a href="services.html">Xidmətlər</a></li>
-              <li><a href="sales.html">Endirim</a></li>
-              <li><a href="portfolio.html">Portfolio</a></li>
-              <li><a href="contact.html">Əlaqə</a></li>
-              <li><a href="delivery.html">Çatdırılma</a></li>
-            </ul>
-          </div>
-        </div>
         <ul class="nav-links d-none d-lg-flex">
           <li><a href="services.html">Xidmətlər</a></li>
           <li><a href="sales.html">Endirim</a></li>
@@ -117,21 +119,19 @@
           <li><a href="delivery.html">Çatdırılma</a></li>
         </ul>
         <div class="nav-right">
-          <div>
-            <div class="dropdown">
-              <button
-                class="btn dropdown-toggle"
-                type="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                AZ
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">EN</a></li>
-                <li><a class="dropdown-item" href="#">RU</a></li>
-              </ul>
-            </div>
+          <div class="dropdown">
+            <button
+              class="btn dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              AZ
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">EN</a></li>
+              <li><a class="dropdown-item" href="#">RU</a></li>
+            </ul>
           </div>
           <div class="wrapper d-flex align-items-center flex-column">
             <div class="icon user">
@@ -139,7 +139,7 @@
                 <i class="fa-regular fa-user"></i>
               </a>
             </div>
-            <p class="alt-text">My account</p>
+            <!-- <p class="alt-text">My account</p> -->
           </div>
           <div class="wrapper d-flex align-items-center flex-column">
             <div class="icon wishlist">
@@ -150,7 +150,7 @@
                 <p>0</p>
               </div>
             </div>
-            <p class="alt-text" >Wishlist</p>
+            <!-- <p class="alt-text" >Wishlist</p> -->
           </div>
 
           <div class="wrapper d-flex align-items-center flex-column">
@@ -162,7 +162,7 @@
                 <p>0</p>
               </div>
             </div>
-            <p class="alt-text">Cart</p>
+            <!-- <p class="alt-text">Cart</p> -->
           </div>
         </div>
       </div>
@@ -221,7 +221,7 @@
             <div class="swiper-pagination"></div>
           </div>
           <div class="main-right">
-            <div class="item one position-relative mb-2">
+            <div class="item one position-relative mb-3">
               <a href="shop.html">
                 <img
                   class="bride-img"
@@ -233,7 +233,7 @@
                 <p class="main-p">
                   Gəlinliyini ən az 30 gün əvvəl sifariş et, 10% endirim qazan
                 </p>
-                <button class="btn btn-primary">Buy Now</button>
+                <button class="btn btn-primary">Daha çox məlumat</button>
               </div>
             </div>
             <div class="bottom d-flex gap-2">
@@ -246,7 +246,7 @@
                 </div>
                 <div class="item-absolute position-absolute">
                   <p class="p-size">Aurora Headset</p>
-                  <button class="details">View Details</button>
+                  <button class="details">Daha çox məlumat</button>
                 </div>
               </div>
               <div class="slider-camera position-relative">
@@ -258,7 +258,7 @@
                 </div>
                 <div class="item-absolute position-absolute">
                   <p class="p-size">Fotoqraf və videoqraf xidmətləri</p>
-                  <button class="details">View Details</button>
+                  <button class="details">Daha çox məlumat</button>
                 </div>
               </div>
             </div>
@@ -270,8 +270,8 @@
       <!-- popular products section start -->
       <section class="popular-products-section">
         <div class="container">
-          <div class="title mb-4">
-            <h4>Popular Categories</h4>
+          <div class="title mb-4 d-flex justify-content-center">
+            <h4>Çox Satılanlar</h4>
           </div>
           <div class="swiper products-swiper">
             <div class="swiper-wrapper">
@@ -382,7 +382,7 @@
       <!-- products section start -->
       <section class="products-section">
         <div class="container">
-          <div class="title mb-4">
+          <div class="title mb-4 d-flex justify-content-center">
             <h4>The Best Offers</h4>
           </div>
           <div class="d-flex justify-content-end align-items-center">
@@ -628,7 +628,7 @@
       <!-- discounted products section start -->
       <section class="discounted-products-section">
         <div class="container">
-          <div class="title mb-4">
+          <div class="title mb-4 d-flex justify-content-center">
             <h4>Endirimli Məhsullar</h4>
           </div>
           <!-- Nav tabs -->
