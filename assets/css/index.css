@@ -688,20 +688,15 @@ nav {
                 gap: 0 !important;
 
                 .icon {
-                    width: 30px;
-                    height: 30px;
-                    font-size: 15px;
+                    width: 40px;
+                    height: 40px;
+                    font-size: 17px;
                 }
 
                 /* .dropdown {
                     display: none !important;
                 } */
             }
-        }
-
-        .count {
-            right: -14% !important;
-            top: -26% !important;
         }
 
     }
