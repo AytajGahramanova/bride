@@ -49,3 +49,25 @@ let responsiveSearch = document.querySelector(".responsive-search");
 magnifyingGlass.addEventListener("click", () => {
   responsiveSearch.classList.toggle("responsive-search-active");
 });
+
+// load more button
+let cards = document.querySelectorAll(".category-card");
+let loadBtn = document.querySelector(".category-btn .btn");
+let visibleCount = 7;
+
+cards.forEach((card, index) => {
+  if (index >= visibleCount) {
+    card.style.display = "none";
+  }
+});
+loadBtn.addEventListener("click", () => {
+  let nextCards = Array.from(cards).slice(visibleCount, visibleCount + 7);
+  nextCards.forEach((card) => {
+    card.style.display = "block";
+  });
+  visibleCount += 7;
+
+  if (visibleCount >= cards.length) {
+    loadBtn.style.display = "none";
+  }
+});
