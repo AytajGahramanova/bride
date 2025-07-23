@@ -317,20 +317,23 @@ nav {
             }
 
             .main-slider-content {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 flex-direction: column;
-                top: 8%;
-                left: 14%;
+                text-align: center;
 
                 h4 {
-                    font-size: 36px;
-                    color: #000;
+                    font-size: 38px;
+                    color: #fff;
                 }
 
                 p {
-                    color: #000;
+                    color: #fff;
                     margin-top: 10px;
                 }
             }
@@ -376,6 +379,7 @@ nav {
                 aspect-ratio: 675 / 277;
                 border-radius: 15px;
                 object-fit: contain;
+                margin-left: -11rem
             }
 
             &:hover img {
@@ -384,13 +388,16 @@ nav {
         }
 
         .item-absolute {
-            top: 25%;
-            left: 5%;
+            top: 15%;
+            right: 0;
 
             .main-p {
-                color: #fff;
+                color: #000;
                 font-size: 28px;
                 margin-bottom: 20px;
+                width: 100%;
+                max-width: 300px;
+                font-weight: 500;
             }
         }
 
@@ -435,6 +442,18 @@ nav {
             height: 100%;
             max-height: 181px;
         }
+    }
+
+    .bcg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 15px;
     }
 }
 
@@ -648,8 +667,27 @@ nav {
 /* discounted products section start */
 
 .discounted-products-section {
+    .nav-link {
+        width: 10rem;
+        white-space: normal;
+        text-align: center;
+        color: #000;
+    }
+
     .nav-tabs {
-        --bs-nav-tabs-border-color: transparent !important
+        --bs-nav-tabs-border-color: transparent !important;
+        --bs-nav-tabs-border-width: 0 !important;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        scroll-behavior: smooth;
+        white-space: nowrap;
+        padding-bottom: 0.5rem;
+    }
+
+    .nav-tabs::-webkit-scrollbar {
+        display: none;
     }
 
     .fade:not(.show) {
@@ -660,6 +698,7 @@ nav {
         color: var(--bs-nav-tabs-link-active-color);
         background-color: transparent !important;
         border: none !important;
+        border-bottom: 2px solid red !important;
     }
 
     .nav-link:hover {
@@ -841,7 +880,6 @@ nav {
             }
 
             .main-slider-content {
-                left: 15% !important;
 
                 p {
                     font-size: 14px;
@@ -933,3 +971,10 @@ nav {
 /*  slider section end */
 
 /* !responsive end */
+
+
+.arxa-fon {
+    background-image: url(../images/home/slider-section/creative-clay-textured-background-blue-border-diy-tie-dye-art-abstract-style\ \(1\).jpg);
+    background-size: cover;
+    background-position: center;
+}
