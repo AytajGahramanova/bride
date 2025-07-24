@@ -71,6 +71,7 @@
           </div>
           <div class="offcanvas-body">
             <ul class="d-flex flex-column">
+              <li><a href="index.html">Ana Səhifə</a></li>
               <li><a href="services.html">Xidmətlər</a></li>
               <li><a href="sales.html">Endirim</a></li>
               <li><a href="portfolio.html">Portfolio</a></li>
@@ -203,7 +204,7 @@
               <div class="swiper-slide">
                 <div class="swiper-content">
                   <div class="main-img position-relative"></div>
-                  <div class="bcg"></div>
+                  <div class="slider-bcg"></div>
                   <div class="main-slider-content position-absolute">
                     <h4>Zövqünüzə uyğun gəlinliklər</h4>
                     <p>A-kəsim, Vintage, Bohem. Hamısı burada!</p>
@@ -218,7 +219,7 @@
               <div class="swiper-slide">
                 <div class="swiper-content">
                   <div class="second-img position-relative"></div>
-                  <div class="bcg"></div>
+                  <div class="slider-bcg"></div>
                   <div class="main-slider-content position-absolute">
                     <h4>Gəlin gülü ilə seçilər</h4>
                     <p>Həm əlinə, həm də zövqünə yaraşan gül seçimləri</p>
@@ -233,7 +234,7 @@
               <div class="swiper-slide">
                 <div class="swiper-content">
                   <div class="third-img position-relative"></div>
-                  <div class="bcg"></div>
+                  <div class="slider-bcg"></div>
                   <div class="main-slider-content position-absolute">
                     <h4>İstənilən tərzdə dekor xidmətləri</h4>
                     <p>Eleqant, klassik, boho</p>
@@ -249,44 +250,51 @@
             <div class="swiper-pagination"></div>
           </div>
           <div class="main-right">
-            <div class="item one arxa-fon position-relative mb-3">
-              <a href="shop.html">
-                <img
-                  class="bride-img"
-                  src="assets/images/home/slider-section/slider-img-3.png"
-                  alt="img"
-                />
-              </a>
-              <div class="item-absolute position-absolute">
-                <p class="main-p">
-                  Gəlinliyini ən az 30 gün əvvəl sifariş et, 10% endirim qazan
-                </p>
-                <button class="btn btn-primary">Daha çox məlumat</button>
+            <div class="item one item-bcg mb-3">
+              <div
+                class="item-overlay d-flex justify-content-between align-items-center"
+              >
+                <div class="item-text">
+                  <p class="main-p">
+                    Gəlinliyini ən az 30 gün əvvəl sifariş et, 10%
+                    endirim&nbsp;qazan
+                  </p>
+                  <a href="" class="btn btn-primary">Daha çox məlumat</a>
+                </div>
+                <div class="item-img">
+                  <img
+                    class="bride-img"
+                    src="assets/images/home/slider-section/slider-bride-image.png"
+                    alt="img"
+                  />
+                </div>
               </div>
             </div>
-            <div class="bottom d-flex gap-2">
-              <div class="slider-car position-relative">
-                <div class="image">
+
+            <div class="bottom d-flex align-items-center gap-2 mt-3">
+              <div class="bottom-card item-bcg position-relative d-flex align-items-center gap-3">
+                <div class="text">
+                  <p>
+                    Gəlinliyini ən az 30 gün əvvəl sifariş et, 10%
+                    endirim&nbsp;qazan
+                  </p>
+                </div>
+                <div class="bottom-image">
                   <img
                     src="assets/images/home/slider-section/slider-section-car.jpg"
-                    alt="img"
+                    alt=""
                   />
-                </div>
-                <div class="item-absolute position-absolute">
-                  <p class="p-size">Aurora Headset</p>
-                  <button class="details">Daha çox məlumat</button>
                 </div>
               </div>
-              <div class="slider-camera position-relative">
-                <div class="image">
-                  <img
-                    src="assets/images/home/slider-section/slider-img-2.png"
-                    alt="img"
-                  />
+              <div class="bottom-card item-bcg position-relative d-flex align-items-center gap-3">
+                <div class="text">
+                  <p>Bəy gəlin üçün ideal çəkiliş ideam var </p>
                 </div>
-                <div class="item-absolute position-absolute">
-                  <p class="p-size">Fotoqraf və videoqraf xidmətləri</p>
-                  <button class="details">Daha çox məlumat</button>
+                <div class="bottom-image">
+                  <img
+                    src="assets/images/home/slider-section/think-girl.jpg"
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
@@ -787,25 +795,25 @@
           </ul>
 
           <!-- Tab content -->
-          <div class="tab-conten">
+          <div class="tab-content">
             <div
               class="tab-pane fade show active"
               id="fotoqraf"
               role="tabpanel"
             >
               <div
-                class="row products-wrapper d-flex justify-content-between g-4"
+                class="row products-wrapper d-flex justify-content-between flex-wrap"
               >
-                <div class="product col-6 col-md-4 col-lg-2">
-                  <div class="top d-flex justify-content-between mb-3">
+                <div class="product col-6 col-lg-3">
+                  <div class="top d-flex justify-content-between mb-2">
                     <div class="d-flex flex-column gap-1">
                       <div class="product-sale-price">
                         <button>-10%</button>
                       </div>
                     </div>
-                    <div class="favorite">
+                    <!-- <div class="favorite">
                       <i class="fa-regular fa-heart"></i>
-                    </div>
+                    </div> -->
                   </div>
                   <div class="d-flex justify-content-center">
                     <a href="product-detail.html"
@@ -816,22 +824,9 @@
                   </div>
                   <div class="product-content">
                     <p>
-                      <a href="product-detail.html"
-                        >Gəlinlik 0003</a
-                      >
+                      <a href="product-detail.html">Gəlinlik 0003</a>
                     </p>
-                    <span class="mb-2">Apple MacBook</span>
-                    <div class="mb-2">
-                      <i class="fa-solid fa-star" style="color: #ffd43b"></i
-                      ><i class="fa-solid fa-star" style="color: #ffd43b"></i
-                      ><i class="fa-solid fa-star" style="color: #ffd43b"></i
-                      ><i class="fa-solid fa-star" style="color: #ffd43b"></i
-                      ><i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                    </div>
-                    <div class="stock d-flex gap-2 align-items-center">
-                      <i class="fa-solid fa-check" style="color: #4690c8"></i>
-                      <p>In stock</p>
-                    </div>
+                    <span class="mb-2">Kateqoriya Adı</span>
                     <h6>1600 azn</h6>
                     <div
                       class="d-flex justify-content-center align-items-center mt-3"
@@ -842,15 +837,12 @@
                     </div>
                   </div>
                 </div>
-                <div class="product col-6 col-md-4 col-lg-2">
-                  <div class="top d-flex justify-content-between mb-3">
+                <div class="product col-6 col-lg-3">
+                  <div class="top d-flex justify-content-between mb-2">
                     <div class="d-flex flex-column gap-1">
                       <div class="new-product-badge">
                         <button>New</button>
                       </div>
-                    </div>
-                    <div class="favorite">
-                      <i class="fa-regular fa-heart"></i>
                     </div>
                   </div>
                   <div class="d-flex justify-content-center">
@@ -862,22 +854,9 @@
                   </div>
                   <div class="product-content">
                     <p>
-                      <a href="product-detail.html"
-                        >Gəlin maşını - Mercedes </a
-                      >
+                      <a href="product-detail.html">Gəlin maşını - Mercedes </a>
                     </p>
-                    <span class="mb-2">Apple MacBook</span>
-                    <div class="mb-2">
-                      <i class="fa-solid fa-star" style="color: #ffd43b"></i
-                      ><i class="fa-solid fa-star" style="color: #ffd43b"></i
-                      ><i class="fa-solid fa-star" style="color: #ffd43b"></i
-                      ><i class="fa-solid fa-star" style="color: #ffd43b"></i
-                      ><i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                    </div>
-                    <div class="stock d-flex gap-2 align-items-center">
-                      <i class="fa-solid fa-check" style="color: #4690c8"></i>
-                      <p>In stock</p>
-                    </div>
+                    <span class="mb-2">Kateqoriya Adı</span>
                     <h6>250 azn</h6>
                     <div
                       class="d-flex justify-content-center align-items-center mt-3"
@@ -888,8 +867,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="product col-6 col-md-4 col-lg-2">
-                  <div class="top d-flex justify-content-between mb-3">
+                <div class="product col-6 col-lg-3">
+                  <div class="top d-flex justify-content-between mb-2">
                     <div class="d-flex flex-column gap-1">
                       <div class="product-sale-price">
                         <button>-10%</button>
@@ -897,9 +876,6 @@
                       <div class="new-product-badge">
                         <button>New</button>
                       </div>
-                    </div>
-                    <div class="favorite">
-                      <i class="fa-regular fa-heart"></i>
                     </div>
                   </div>
                   <div class="d-flex justify-content-center">
@@ -911,22 +887,9 @@
                   </div>
                   <div class="product-content">
                     <p>
-                      <a href="product-detail.html"
-                        >Qızılgül buket </a
-                      >
+                      <a href="product-detail.html">Qızılgül buket </a>
                     </p>
-                    <span class="mb-2">Apple MacBook</span>
-                    <div class="mb-2">
-                      <i class="fa-solid fa-star" style="color: #ffd43b"></i
-                      ><i class="fa-solid fa-star" style="color: #ffd43b"></i
-                      ><i class="fa-solid fa-star" style="color: #ffd43b"></i
-                      ><i class="fa-solid fa-star" style="color: #ffd43b"></i
-                      ><i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                    </div>
-                    <div class="stock d-flex gap-2 align-items-center">
-                      <i class="fa-solid fa-check" style="color: #4690c8"></i>
-                      <p>In stock</p>
-                    </div>
+                    <span class="mb-2">Kateqoriya Adı</span>
                     <h6>120 azn</h6>
                     <div
                       class="d-flex justify-content-center align-items-center mt-3"
@@ -937,8 +900,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="product col-6 col-md-4 col-lg-2">
-                  <div class="top d-flex justify-content-between mb-3">
+                <div class="product col-6 col-lg-3">
+                  <div class="top d-flex justify-content-between mb-2">
                     <div class="d-flex flex-column gap-1">
                       <div class="product-sale-price">
                         <button>-10%</button>
@@ -946,9 +909,6 @@
                       <div class="new-product-badge">
                         <button>New</button>
                       </div>
-                    </div>
-                    <div class="favorite">
-                      <i class="fa-regular fa-heart"></i>
                     </div>
                   </div>
                   <div class="d-flex justify-content-center">
@@ -960,22 +920,9 @@
                   </div>
                   <div class="product-content">
                     <p>
-                      <a href="product-detail.html"
-                        >Bənövşəyi dekorasiya</a
-                      >
+                      <a href="product-detail.html">Bənövşəyi dekorasiya</a>
                     </p>
-                    <span class="mb-2">Apple MacBook</span>
-                    <div class="mb-2">
-                      <i class="fa-solid fa-star" style="color: #ffd43b"></i
-                      ><i class="fa-solid fa-star" style="color: #ffd43b"></i
-                      ><i class="fa-solid fa-star" style="color: #ffd43b"></i
-                      ><i class="fa-solid fa-star" style="color: #ffd43b"></i
-                      ><i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                    </div>
-                    <div class="stock d-flex gap-2 align-items-center">
-                      <i class="fa-solid fa-check" style="color: #4690c8"></i>
-                      <p>In stock</p>
-                    </div>
+                    <span class="mb-2">Kateqoriya Adı</span>
                     <h6>700 azn</h6>
                     <div
                       class="d-flex justify-content-center align-items-center mt-3"
@@ -986,8 +933,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="product col-6 col-md-4 col-lg-2">
-                  <div class="top d-flex justify-content-between mb-3">
+                <div class="product col-6 col-lg-3">
+                  <div class="top d-flex justify-content-between mb-2">
                     <div class="d-flex flex-column gap-1">
                       <div class="product-sale-price">
                         <button>-10%</button>
@@ -995,9 +942,6 @@
                       <div class="new-product-badge">
                         <button>New</button>
                       </div>
-                    </div>
-                    <div class="favorite">
-                      <i class="fa-regular fa-heart"></i>
                     </div>
                   </div>
                   <div class="d-flex justify-content-center">
@@ -1009,22 +953,9 @@
                   </div>
                   <div class="product-content">
                     <p>
-                      <a href="product-detail.html"
-                        >Bəy-gəlin ağ dekorasiya</a
-                      >
+                      <a href="product-detail.html">Bəy-gəlin ağ dekorasiya</a>
                     </p>
-                    <span class="mb-2">Apple MacBook</span>
-                    <div class="mb-2">
-                      <i class="fa-solid fa-star" style="color: #ffd43b"></i
-                      ><i class="fa-solid fa-star" style="color: #ffd43b"></i
-                      ><i class="fa-solid fa-star" style="color: #ffd43b"></i
-                      ><i class="fa-solid fa-star" style="color: #ffd43b"></i
-                      ><i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                    </div>
-                    <div class="stock d-flex gap-2 align-items-center">
-                      <i class="fa-solid fa-check" style="color: #4690c8"></i>
-                      <p>In stock</p>
-                    </div>
+                    <span class="mb-2">Kateqoriya Adı</span>
                     <h6>300azn</h6>
                     <div
                       class="d-flex justify-content-center align-items-center mt-3"
@@ -1091,7 +1022,7 @@
       </section>
       <!-- discounted products section end -->
 
-            <!-- products section start -->
+      <!-- products section start -->
       <section class="products-section">
         <div class="container">
           <div class="title mb-4 d-flex justify-content-center">
@@ -1104,14 +1035,11 @@
           </div>
           <div class="row products-wrapper d-flex justify-content-between g-4">
             <div class="product col-6 col-md-4 col-lg-2">
-              <div class="top d-flex justify-content-between mb-3">
+              <div class="top d-flex justify-content-between mb-2">
                 <div class="d-flex flex-column gap-1">
                   <div class="product-sale-price">
                     <button>-10%</button>
                   </div>
-                </div>
-                <div class="favorite">
-                  <i class="fa-regular fa-heart"></i>
                 </div>
               </div>
               <div class="d-flex justify-content-center">
@@ -1123,20 +1051,11 @@
               </div>
               <div class="product-content">
                 <p>
-                  <a href="product-detail.html">Apple MacBook Pro 16″ M1 Pro</a>
+                  <a href="product-detail.html"
+                    >Kateqoriya Adı Pro 16″ M1 Pro</a
+                  >
                 </p>
-                <span class="mb-2">Apple MacBook</span>
-                <div class="mb-2">
-                  <i class="fa-solid fa-star" style="color: #ffd43b"></i
-                  ><i class="fa-solid fa-star" style="color: #ffd43b"></i
-                  ><i class="fa-solid fa-star" style="color: #ffd43b"></i
-                  ><i class="fa-solid fa-star" style="color: #ffd43b"></i
-                  ><i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                </div>
-                <div class="stock d-flex gap-2 align-items-center">
-                  <i class="fa-solid fa-check" style="color: #4690c8"></i>
-                  <p>In stock</p>
-                </div>
+                <span class="mb-2">Kateqoriya Adı</span>
                 <h6>2000 ₼</h6>
                 <div
                   class="d-flex justify-content-center align-items-center mt-3"
@@ -1148,14 +1067,11 @@
               </div>
             </div>
             <div class="product col-6 col-md-4 col-lg-2">
-              <div class="top d-flex justify-content-between mb-3">
+              <div class="top d-flex justify-content-between mb-2">
                 <div class="d-flex flex-column gap-1">
                   <div class="new-product-badge">
                     <button>New</button>
                   </div>
-                </div>
-                <div class="favorite">
-                  <i class="fa-regular fa-heart"></i>
                 </div>
               </div>
               <div class="d-flex justify-content-center">
@@ -1167,20 +1083,11 @@
               </div>
               <div class="product-content">
                 <p>
-                  <a href="product-detail.html">Apple MacBook Pro 16″ M1 Pro</a>
+                  <a href="product-detail.html"
+                    >Kateqoriya Adı Pro 16″ M1 Pro</a
+                  >
                 </p>
-                <span class="mb-2">Apple MacBook</span>
-                <div class="mb-2">
-                  <i class="fa-solid fa-star" style="color: #ffd43b"></i
-                  ><i class="fa-solid fa-star" style="color: #ffd43b"></i
-                  ><i class="fa-solid fa-star" style="color: #ffd43b"></i
-                  ><i class="fa-solid fa-star" style="color: #ffd43b"></i
-                  ><i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                </div>
-                <div class="stock d-flex gap-2 align-items-center">
-                  <i class="fa-solid fa-check" style="color: #4690c8"></i>
-                  <p>In stock</p>
-                </div>
+                <span class="mb-2">Kateqoriya Adı</span>
                 <h6>2000 ₼</h6>
                 <div
                   class="d-flex justify-content-center align-items-center mt-3"
@@ -1192,7 +1099,7 @@
               </div>
             </div>
             <div class="product col-6 col-md-4 col-lg-2">
-              <div class="top d-flex justify-content-between mb-3">
+              <div class="top d-flex justify-content-between mb-2">
                 <div class="d-flex flex-column gap-1">
                   <div class="product-sale-price">
                     <button>-10%</button>
@@ -1200,9 +1107,6 @@
                   <div class="new-product-badge">
                     <button>New</button>
                   </div>
-                </div>
-                <div class="favorite">
-                  <i class="fa-regular fa-heart"></i>
                 </div>
               </div>
               <div class="d-flex justify-content-center">
@@ -1214,20 +1118,11 @@
               </div>
               <div class="product-content">
                 <p>
-                  <a href="product-detail.html">Apple MacBook Pro 16″ M1 Pro</a>
+                  <a href="product-detail.html"
+                    >Kateqoriya Adı Pro 16″ M1 Pro</a
+                  >
                 </p>
-                <span class="mb-2">Apple MacBook</span>
-                <div class="mb-2">
-                  <i class="fa-solid fa-star" style="color: #ffd43b"></i
-                  ><i class="fa-solid fa-star" style="color: #ffd43b"></i
-                  ><i class="fa-solid fa-star" style="color: #ffd43b"></i
-                  ><i class="fa-solid fa-star" style="color: #ffd43b"></i
-                  ><i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                </div>
-                <div class="stock d-flex gap-2 align-items-center">
-                  <i class="fa-solid fa-check" style="color: #4690c8"></i>
-                  <p>In stock</p>
-                </div>
+                <span class="mb-2">Kateqoriya Adı</span>
                 <h6>2000 ₼</h6>
                 <div
                   class="d-flex justify-content-center align-items-center mt-3"
@@ -1239,7 +1134,7 @@
               </div>
             </div>
             <div class="product col-6 col-md-4 col-lg-2">
-              <div class="top d-flex justify-content-between mb-3">
+              <div class="top d-flex justify-content-between mb-2">
                 <div class="d-flex flex-column gap-1">
                   <div class="product-sale-price">
                     <button>-10%</button>
@@ -1247,9 +1142,6 @@
                   <div class="new-product-badge">
                     <button>New</button>
                   </div>
-                </div>
-                <div class="favorite">
-                  <i class="fa-regular fa-heart"></i>
                 </div>
               </div>
               <div class="d-flex justify-content-center">
@@ -1261,20 +1153,11 @@
               </div>
               <div class="product-content">
                 <p>
-                  <a href="product-detail.html">Apple MacBook Pro 16″ M1 Pro</a>
+                  <a href="product-detail.html"
+                    >Kateqoriya Adı Pro 16″ M1 Pro</a
+                  >
                 </p>
-                <span class="mb-2">Apple MacBook</span>
-                <div class="mb-2">
-                  <i class="fa-solid fa-star" style="color: #ffd43b"></i
-                  ><i class="fa-solid fa-star" style="color: #ffd43b"></i
-                  ><i class="fa-solid fa-star" style="color: #ffd43b"></i
-                  ><i class="fa-solid fa-star" style="color: #ffd43b"></i
-                  ><i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                </div>
-                <div class="stock d-flex gap-2 align-items-center">
-                  <i class="fa-solid fa-check" style="color: #4690c8"></i>
-                  <p>In stock</p>
-                </div>
+                <span class="mb-2">Kateqoriya Adı</span>
                 <h6>2000 ₼</h6>
                 <div
                   class="d-flex justify-content-center align-items-center mt-3"
@@ -1286,7 +1169,7 @@
               </div>
             </div>
             <div class="product col-6 col-md-4 col-lg-2">
-              <div class="top d-flex justify-content-between mb-3">
+              <div class="top d-flex justify-content-between mb-2">
                 <div class="d-flex flex-column gap-1">
                   <div class="product-sale-price">
                     <button>-10%</button>
@@ -1294,9 +1177,6 @@
                   <div class="new-product-badge">
                     <button>New</button>
                   </div>
-                </div>
-                <div class="favorite">
-                  <i class="fa-regular fa-heart"></i>
                 </div>
               </div>
               <div class="d-flex justify-content-center">
@@ -1308,20 +1188,11 @@
               </div>
               <div class="product-content">
                 <p>
-                  <a href="product-detail.html">Apple MacBook Pro 16″ M1 Pro</a>
+                  <a href="product-detail.html"
+                    >Kateqoriya Adı Pro 16″ M1 Pro</a
+                  >
                 </p>
-                <span class="mb-2">Apple MacBook</span>
-                <div class="mb-2">
-                  <i class="fa-solid fa-star" style="color: #ffd43b"></i
-                  ><i class="fa-solid fa-star" style="color: #ffd43b"></i
-                  ><i class="fa-solid fa-star" style="color: #ffd43b"></i
-                  ><i class="fa-solid fa-star" style="color: #ffd43b"></i
-                  ><i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                </div>
-                <div class="stock d-flex gap-2 align-items-center">
-                  <i class="fa-solid fa-check" style="color: #4690c8"></i>
-                  <p>In stock</p>
-                </div>
+                <span class="mb-2">Kateqoriya Adı</span>
                 <h6>2000 ₼</h6>
                 <div
                   class="d-flex justify-content-center align-items-center mt-3"
