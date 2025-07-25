@@ -189,7 +189,7 @@ nav {
         .nav-right {
             display: flex;
             align-items: center;
-            gap: 70px;
+            gap: 20px;
 
             .icon {
                 width: 40px;
@@ -481,6 +481,25 @@ nav {
         background-size: cover;
         background-position: center;
     }
+
+    .bride-car-bcg {
+        background-image: url(../images/home/slider-section/car-bride.jpg);
+        background-size: cover;
+        background-position: center;
+
+        .text {
+            margin-bottom: 62%;
+        }
+    }
+
+    .slider-content-btn {
+        background-color: #fff;
+        color: #587558;
+        font-size: 17px;
+        border-radius: 15px;
+        padding: 10px 40px;
+        font-weight: 500;
+    }
 }
 
 /* slider section end */
@@ -641,6 +660,15 @@ nav {
             span {
                 color: #a5a5a5;
                 font-size: 15px;
+            }
+
+            .add-basket-btn {
+                background-color: #587558;
+                color: #fff;
+                font-size: 17px;
+                border-radius: 15px;
+                padding: 10px 40px;
+                margin-top: 2%;
             }
         }
 
@@ -824,6 +852,16 @@ nav {
             }
         }
     }
+
+    .add-basket-btn {
+        background-color: #587558;
+        color: #fff;
+        font-size: 17px;
+        border-radius: 15px;
+        padding: 10px 30px;
+        margin-top: 2%;
+        border: none;
+    }
 }
 
 /* discounted products section end */
@@ -862,12 +900,11 @@ nav {
 
     }
 
-    /* 
-    .bottom {
-        .bottom-card {
-            max-width: 100% !important;
+    .bride-car-bcg {
+        .text {
+            margin-bottom: 10% !important;
         }
-    } */
+    }
 }
 
 @media (max-width:992px) {
@@ -1013,13 +1050,36 @@ nav {
 
     .bottom {
         .bottom-card {
-            height: 100% !important;
+            /* height: 100% !important; */
         }
 
-        .text p{
+        .text p {
             font-size: 17px !important;
             line-height: 25px !important;
             margin-bottom: 10px !important;
+        }
+    }
+}
+
+@media(max-width:500px) {
+    .slider-section {
+        .slider-content-btn {
+            font-size: 12px;
+            padding: 7px 18px;
+        }
+
+        .main-right {
+            .bottom {
+                img {
+                    width: 250px !important;
+                }
+            }
+        }
+
+        .bride-car-bcg {
+            .text {
+                margin-bottom: 40% !important;
+            }
         }
     }
 }
@@ -1044,6 +1104,13 @@ nav {
             .main-p {
                 font-size: 16px !important;
             }
+        }
+    }
+
+    .discounted-products-section {
+        .add-basket-btn {
+            font-size: 14px;
+            padding: 6px 10px;
         }
     }
 }
