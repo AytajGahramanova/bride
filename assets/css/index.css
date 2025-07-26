@@ -76,7 +76,7 @@ main {
                 position: absolute;
                 border-radius: 50%;
                 border: none;
-                background-color: #1c61e7;
+                background-color: #587558;
                 color: #fff;
                 width: 40px;
                 height: 40px;
@@ -117,7 +117,7 @@ main {
                     }
 
                     p {
-                        color: #1c61e7;
+                        color: #587558;
                         font-size: 15px;
                     }
                 }
@@ -441,13 +441,22 @@ nav {
                 padding: 11px;
                 width: 100%;
                 height: 280px;
+                transition: all .3s;
+
+                &:hover .text img {
+                    scale: 1.03;
+                }
             }
 
             img {
                 width: 100%;
                 max-width: 300px;
-                transition: all .3s;
                 border-radius: 6px;
+                transition: all .3s;
+            }
+
+            .car-text-img {
+                transition: all .3s;
 
                 &:hover {
                     scale: 1.03;
@@ -460,6 +469,12 @@ nav {
                     font-size: 20px;
                     font-weight: 500;
                 }
+            }
+
+            .photograph img {
+                height: 100%;
+                max-height: 189px;
+                object-fit: contain;
             }
         }
     }
@@ -480,6 +495,17 @@ nav {
         background-image: url(../images/home/slider-section/slider-grad-bg.jpg);
         background-size: cover;
         background-position: center;
+    }
+
+    .photo-bcg {
+        background-image: url(../images/home/slider-section/slide-img-decoration.jpg);
+        background-size: cover;
+        background-position: center;
+        transition: all .5s;
+
+        &:hover .text-image img {
+            scale: 1.03;
+        }
     }
 
     .bride-car-bcg {
@@ -1078,7 +1104,13 @@ nav {
 
         .bride-car-bcg {
             .text {
-                margin-bottom: 40% !important;
+                margin-bottom: 48% !important;
+            }
+        }
+
+        .bottom {
+            .photograph img {
+                max-height: 202px !important;
             }
         }
     }
