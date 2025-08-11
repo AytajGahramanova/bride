@@ -506,10 +506,11 @@ nav {
     }
 
     .photo-bcg {
-        background-image: url(../images/home/slider-section/slide-img-decoration.jpg);
+        background-image: url(../images/home/slider-section/photo-idea.png);
         background-size: contain;
         background-position: center;
         transition: all .5s;
+        background-repeat: no-repeat;
 
         &:hover .text-image img {
             scale: 1.03;
