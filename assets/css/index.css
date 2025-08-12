@@ -517,6 +517,14 @@ nav {
         }
     }
 
+    .photo-responsive-bcg {
+        background-image: url(../images/home/slider-section/Artboard_2[1].png);
+        background-size: contain;
+        background-position: center;
+        transition: all .5s;
+        background-repeat: no-repeat;
+    }
+
     .bride-car-bcg {
         background-image: url(../images/home/slider-section/car-bride.jpg);
         background-size: cover;
@@ -766,8 +774,8 @@ nav {
     .nav-tabs {
         --bs-nav-tabs-border-color: transparent !important;
         --bs-nav-tabs-border-width: 0 !important;
-        overflow-x: auto;
-        overflow-y: hidden;
+        overflow-x: auto !important;
+        overflow-y: scroll !important;
         scrollbar-width: none;
         -ms-overflow-style: none;
         scroll-behavior: smooth;
@@ -1159,3 +1167,57 @@ nav {
 /*  slider section end */
 
 /* !responsive end */
+
+
+.form-container {
+    background: #fff;
+    border-radius: 12px;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+
+    .select-wrapper {
+        display: flex;
+        gap: 50px;
+
+        input,
+        select {
+            padding: 8px;
+            border-radius: 20px;
+            border: 1px solid #ccc;
+            outline: none;
+            font-size: 14px;
+            /* padding: 6px 38px; */
+            width: 100%;
+            max-width: 200px;
+            padding: 12px;
+        }
+    }
+}
+
+.profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.free-badge {
+    background: #00b56a;
+    color: white;
+    font-size: 14px;
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
