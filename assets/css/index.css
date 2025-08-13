@@ -519,10 +519,12 @@ nav {
 
     .photo-responsive-bcg {
         background-image: url(../images/home/slider-section/Artboard_2[1].png);
-        background-size: contain;
+        background-size: cover;
         background-position: center;
         transition: all .5s;
         background-repeat: no-repeat;
+        width: 100%;
+        height: 180px;
     }
 
     .bride-car-bcg {
@@ -775,17 +777,35 @@ nav {
         --bs-nav-tabs-border-color: transparent !important;
         --bs-nav-tabs-border-width: 0 !important;
         overflow-x: auto !important;
-        overflow-y: scroll !important;
-        scrollbar-width: none;
-        -ms-overflow-style: none;
+        overflow-y: hidden !important;
         scroll-behavior: smooth;
         white-space: nowrap;
         padding-bottom: 0.5rem;
     }
 
     .nav-tabs::-webkit-scrollbar {
-        display: none;
+        height: 3px;
     }
+
+    .nav-tabs::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    .nav-tabs::-webkit-scrollbar-thumb {
+        background: #BF943D;
+        border-radius: 4px;
+    }
+
+    .nav-tabs::-webkit-scrollbar-thumb:hover {
+        background: #BF943D;
+    }
+
+    /* Firefox */
+    .nav-tabs {
+        scrollbar-width: thin;
+        scrollbar-color: #BF943D #f1f1f1;
+    }
+
 
     .fade:not(.show) {
         display: none;
@@ -1042,6 +1062,17 @@ nav {
     .category-btn .btn {
         margin-top: 8% !important;
     }
+
+    .form-container {
+        .select-wrapper {
+            flex-direction: column !important;
+
+            input,
+            select {
+                max-width: none !important;
+            }
+        }
+    }
 }
 
 @media (max-width:768px) {
@@ -1198,6 +1229,16 @@ nav {
             padding: 12px;
         }
     }
+
+    button {
+        background: #00b56a;
+        color: white;
+        font-size: 14px;
+        padding: 3px 28px;
+        border-radius: 10px;
+        font-weight: bold;
+        border: none;
+    }
 }
 
 .profile-img {
@@ -1217,7 +1258,7 @@ nav {
 }
 
 .title {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     margin-bottom: 4px;
 }
