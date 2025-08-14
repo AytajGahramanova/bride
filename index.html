@@ -315,30 +315,62 @@
       <!-- slider section end -->
 
       <!-- form start -->
-      <div class="form-container">
-        <div>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png"
-            alt="profile"
-            class="profile-img"
-          />
-          <span class="free-badge">Ücretsiz!</span>
-          <span class="title"
-            >Orqanizasiya üçün dəstək xidmətimizdən ödənişsiz yararlanın.</span
-          >
-        </div>
+      <div class="book">
+        <div class="form-container">
+          <div class="d-flex align-items-center justify-content-between">
+            <div class="form-title">
+              <div class="form-logo">
+                <img
+                  src="assets/images/home/new-logo.png"
+                  alt="profile"
+                  class="profile-img"
+                />
+              </div>
+              <div class="form-badge">
+                <span class="free-badge">Pulsuz!</span>
+                <span class="title"
+                  >Orqanizasiya üçün dəstək xidmətimizdən ödənişsiz
+                  yararlanın.</span
+                >
+              </div>
+            </div>
+            <div class="popper position-relative">
+              <i class="fa-solid fa-circle-info"></i>
+              <div class="popup-text">
+                <p>
+                  Tədbir və şənlik orqanizasıyası üçün menecerlərimiz sizə kömək
+                  edəcək. Bu xidmət, Muğam Events’in sizə təqdim etdiyi
+                  ödənişsiz dəstək xidmətidir.
+                </p>
+              </div>
+            </div>
+          </div>
 
-        <div class="select-wrapper">
-          <select>
-            <option>+994</option>
-          </select>
-          <div><input type="text" placeholder="0" /></div>
-          <div><input type="text" placeholder="Ad Soyad" /></div>
-          <div><input type="date" /></div>
-          <select>
-            <option>12:00-13:00</option>
-          </select>
-          <button>Pulsuz zəng</button>
+          <div class="select-wrapper">
+            <div class="phone-input">
+              <select class="phone-select">
+                <option value="+90">+90</option>
+                <option value="+994">+994</option>
+                <option value="+1">+1</option>
+              </select>
+              <input type="text" placeholder="Telefon" />
+              <i class="fa-solid fa-phone-flip"></i>
+            </div>
+
+            <div class="form-group">
+              <input type="text" placeholder="Ad Soyad" />
+              <i class="fa-solid fa-address-card"></i>
+            </div>
+            <select class="date-select">
+              <option value="14 Avqust">14 Avqust</option>
+              <option value="Bu gün">Bu gün</option>
+              <option value="16 Avqust">16 Avqust</option>
+            </select>
+            <select class="clock-select">
+              <option>12:00-13:00</option>
+            </select>
+            <button>Pulsuz zəng</button>
+          </div>
         </div>
       </div>
       <!-- form end -->
