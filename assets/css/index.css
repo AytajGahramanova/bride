@@ -1224,6 +1224,20 @@ nav {
             padding: 6px 10px;
         }
     }
+
+    .phone-input {
+        .phone-select {
+            font-size: 12px !important;
+        }
+
+        input {
+            font-size: 13px !important;
+        }
+
+        i {
+            font-size: 14px !important;
+        }
+    }
 }
 
 /*  slider section end */
@@ -1362,6 +1376,10 @@ nav {
         column-gap: 10px;
         cursor: pointer;
     }
+
+    .dropdown-menu.show {
+        width: 100%;
+    }
 }
 
 .profile-img {
@@ -1383,6 +1401,8 @@ nav {
         font-size: 20px;
         font-weight: 700;
         align-self: center;
+        width: 100%;
+        text-align: center;
     }
 
     .title {
@@ -1397,9 +1417,7 @@ nav {
 .phone-input {
     display: flex;
     align-items: center;
-    border: 1px solid #aaa;
     border-radius: 50px;
-    padding: 6px 12px;
     background-color: #fff;
     height: 40px;
     width: 100%;

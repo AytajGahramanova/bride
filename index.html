@@ -327,7 +327,7 @@
                 />
               </div>
               <div class="form-badge">
-                <span class="free-badge">Pulsuz!</span>
+                <span class="free-badge">Ödənişsiz!</span>
                 <span class="title"
                   >Orqanizasiya üçün dəstək xidmətimizdən ödənişsiz
                   yararlanın.</span
@@ -349,9 +349,7 @@
           <div class="select-wrapper">
             <div class="phone-input">
               <select class="phone-select">
-                <option value="+90">+90</option>
                 <option value="+994">+994</option>
-                <option value="+1">+1</option>
               </select>
               <input type="text" placeholder="Telefon" />
               <i class="fa-solid fa-phone-flip"></i>
@@ -369,7 +367,20 @@
             <select class="clock-select">
               <option>12:00-13:00</option>
             </select>
-            <button>Pulsuz zəng</button>
+            <!-- <button>Pulsuz zəng</button> -->
+            <div class="dropdown">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Sənə zəng edək
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Bizə zəng et</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -675,49 +686,13 @@
             <li class="nav-item" role="presentation">
               <button
                 class="nav-link active"
-                id="fotoqraf-tab"
+                id="bride-tab"
                 data-bs-toggle="tab"
-                data-bs-target="#fotoqraf"
+                data-bs-target="#bride"
                 type="button"
                 role="tab"
               >
-                Fotoqraf
-              </button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button
-                class="nav-link"
-                id="videoqraf-mobiloqraf-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#videoqraf-mobiloqraf"
-                type="button"
-                role="tab"
-              >
-                Videoqraf/Mobiloqraf
-              </button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button
-                class="nav-link"
-                id="car-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#car"
-                type="button"
-                role="tab"
-              >
-                Gəlin maşını
-              </button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button
-                class="nav-link"
-                id="agency-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#agency"
-                type="button"
-                role="tab"
-              >
-                ⁠Dekorasiya şirkəti
+                Gəlinlik
               </button>
             </li>
             <li class="nav-item" role="presentation">
@@ -747,13 +722,61 @@
             <li class="nav-item" role="presentation">
               <button
                 class="nav-link"
-                id="bride-tab"
+                id="derzi-tab"
                 data-bs-toggle="tab"
-                data-bs-target="#bride"
+                data-bs-target="#derzi"
                 type="button"
                 role="tab"
               >
-                Gəlinlik
+                Özəl dərzi
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="car-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#car"
+                type="button"
+                role="tab"
+              >
+                Gəlin maşını
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="fotoqraf-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#fotoqraf"
+                type="button"
+                role="tab"
+              >
+                Fotoqraf
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="videoqraf-mobiloqraf-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#videoqraf-mobiloqraf"
+                type="button"
+                role="tab"
+              >
+                Videoqraf/Mobiloqraf
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="agency-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#agency"
+                type="button"
+                role="tab"
+              >
+                ⁠Dekorasiya şirkəti
               </button>
             </li>
             <li class="nav-item" role="presentation">
@@ -766,6 +789,54 @@
                 role="tab"
               >
                 Xonça
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="tort-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#tort"
+                type="button"
+                role="tab"
+              >
+                Tort
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="catering-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#catering"
+                type="button"
+                role="tab"
+              >
+                Catering
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="dance-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#dance"
+                type="button"
+                role="tab"
+              >
+                ⁠Rəqs qrupu
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="band-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#band"
+                type="button"
+                role="tab"
+              >
+                Band qrup
               </button>
             </li>
             <li class="nav-item" role="presentation">
@@ -802,66 +873,6 @@
                 role="tab"
               >
                 Dəvətnamələr
-              </button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button
-                class="nav-link"
-                id="derzi-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#derzi"
-                type="button"
-                role="tab"
-              >
-                Özəl dərzi
-              </button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button
-                class="nav-link"
-                id="dance-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#dance"
-                type="button"
-                role="tab"
-              >
-                ⁠Rəqs qrupu
-              </button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button
-                class="nav-link"
-                id="catering-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#catering"
-                type="button"
-                role="tab"
-              >
-                Catering
-              </button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button
-                class="nav-link"
-                id="tort-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#tort"
-                type="button"
-                role="tab"
-              >
-                Tort
-              </button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button
-                class="nav-link"
-                id="band-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#band"
-                type="button"
-                role="tab"
-              >
-                Band qrup
               </button>
             </li>
           </ul>
@@ -1036,7 +1047,74 @@
               role="tabpanel"
             ></div>
             <div class="tab-pane fade" id="car" role="tabpanel"></div>
-            <div class="tab-pane fade" id="agency" role="tabpanel"></div>
+            <div class="tab-pane fade" id="agency" role="tabpanel">
+              <div
+                class="row products-wrapper d-flex justify-content-between flex-wrap"
+              >
+                <div class="product col-6 col-lg-3">
+                  <div class="top d-flex justify-content-between mb-2">
+                    <div class="d-flex flex-column gap-1">
+                      <div class="product-sale-price">
+                        <button>-10%</button>
+                      </div>
+                      <div class="new-product-badge">
+                        <button>New</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <a href="product-detail.html"
+                      ><img
+                        src="assets/images/sales-products/sales-products-4.jpg"
+                        alt="product"
+                    /></a>
+                  </div>
+                  <div class="product-content">
+                    <p>
+                      <a href="product-detail.html">Bənövşəyi dekorasiya</a>
+                    </p>
+                    <span class="mb-2">Kateqoriya Adı</span>
+                    <h6>700 azn</h6>
+                    <div
+                      class="d-flex justify-content-center align-items-center mt-3"
+                    >
+                      <button class="add-basket-btn">Səbətə əlavə et</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="product col-6 col-lg-3">
+                  <div class="top d-flex justify-content-between mb-2">
+                    <div class="d-flex flex-column gap-1">
+                      <div class="product-sale-price">
+                        <button>-10%</button>
+                      </div>
+                      <div class="new-product-badge">
+                        <button>New</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <a href="product-detail.html"
+                      ><img
+                        src="assets/images/sales-products/sales-products-5.jpg"
+                        alt="product"
+                    /></a>
+                  </div>
+                  <div class="product-content">
+                    <p>
+                      <a href="product-detail.html">Bəy-gəlin ağ dekorasiya</a>
+                    </p>
+                    <span class="mb-2">Kateqoriya Adı</span>
+                    <h6>300azn</h6>
+                    <div
+                      class="d-flex justify-content-center align-items-center mt-3"
+                    >
+                      <button class="add-basket-btn">Səbətə əlavə et</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="tab-pane fade" id="flower" role="tabpanel">
               <div
                 class="row products-wrapper d-flex justify-content-between flex-wrap"
@@ -1124,68 +1202,6 @@
                     </p>
                     <span class="mb-2">Kateqoriya Adı</span>
                     <h6>120 azn</h6>
-                    <div
-                      class="d-flex justify-content-center align-items-center mt-3"
-                    >
-                      <button class="add-basket-btn">Səbətə əlavə et</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="product col-6 col-lg-3">
-                  <div class="top d-flex justify-content-between mb-2">
-                    <div class="d-flex flex-column gap-1">
-                      <div class="product-sale-price">
-                        <button>-10%</button>
-                      </div>
-                      <div class="new-product-badge">
-                        <button>New</button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="d-flex justify-content-center">
-                    <a href="product-detail.html"
-                      ><img
-                        src="assets/images/sales-products/sales-products-4.jpg"
-                        alt="product"
-                    /></a>
-                  </div>
-                  <div class="product-content">
-                    <p>
-                      <a href="product-detail.html">Bənövşəyi dekorasiya</a>
-                    </p>
-                    <span class="mb-2">Kateqoriya Adı</span>
-                    <h6>700 azn</h6>
-                    <div
-                      class="d-flex justify-content-center align-items-center mt-3"
-                    >
-                      <button class="add-basket-btn">Səbətə əlavə et</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="product col-6 col-lg-3">
-                  <div class="top d-flex justify-content-between mb-2">
-                    <div class="d-flex flex-column gap-1">
-                      <div class="product-sale-price">
-                        <button>-10%</button>
-                      </div>
-                      <div class="new-product-badge">
-                        <button>New</button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="d-flex justify-content-center">
-                    <a href="product-detail.html"
-                      ><img
-                        src="assets/images/sales-products/sales-products-5.jpg"
-                        alt="product"
-                    /></a>
-                  </div>
-                  <div class="product-content">
-                    <p>
-                      <a href="product-detail.html">Bəy-gəlin ağ dekorasiya</a>
-                    </p>
-                    <span class="mb-2">Kateqoriya Adı</span>
-                    <h6>300azn</h6>
                     <div
                       class="d-flex justify-content-center align-items-center mt-3"
                     >
