@@ -448,7 +448,7 @@ nav {
                 }
             }
 
-            img {
+            .car-text-img {
                 width: 100%;
                 max-width: 300px;
                 border-radius: 6px;
@@ -505,7 +505,7 @@ nav {
         background-position: center;
     }
 
-    .photo-bcg {
+    /* .photo-bcg {
         background-image: url(../images/home/slider-section/photo-idea.png);
         background-size: contain;
         background-position: center;
@@ -515,7 +515,7 @@ nav {
         &:hover .text-image img {
             scale: 1.03;
         }
-    }
+    } */
 
     .photo-responsive-bcg {
         background-image: url(../images/home/slider-section/Artboard_2[1].png);
@@ -534,6 +534,29 @@ nav {
 
         .text {
             margin-bottom: 62%;
+        }
+    }
+
+    .bride-photo-bcg {
+        background-image: url(../images/home/slider-section/FOTOQRAF_SON_1[1].png);
+        background-size: cover;
+        background-position: center;
+
+        .text-photo {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            bottom: -10%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .photo-text-img {
+                width: 100%;
+                border-radius: 6px;
+                transition: all .3s;
+            }
         }
     }
 
@@ -932,7 +955,7 @@ nav {
 /* !responsive start */
 @media (max-width:1200px) {
     .slider-section {
-        margin-bottom: 170px !important;
+        /* margin-bottom: 170px !important; */
 
         .container {
             flex-direction: column;
@@ -949,7 +972,12 @@ nav {
 
         .image {
             margin-left: 18rem !important;
+        }
 
+        .text-photo {
+            .photo-text-img {
+                max-width: 400px;
+            }
         }
     }
 
@@ -1175,7 +1203,7 @@ nav {
 
         .main-right {
             .bottom {
-                img {
+                .car-text-img {
                     width: 250px !important;
                 }
             }
