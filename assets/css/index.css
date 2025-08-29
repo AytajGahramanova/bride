@@ -287,8 +287,30 @@ nav {
 
 /* slider section start */
 .slider-section {
+    position: relative;
+    background-image: url(../images/home/slider-section/home-slider-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
     padding-top: 30px;
     margin-bottom: 80px;
+
+    .slider-main-content {
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        img {
+            width: 100%;
+        }
+    }
 
     .main-swiper {
         width: 100%;
@@ -689,7 +711,7 @@ nav {
     .more-products {
         button {
             background-color: #AA883B;
-            color: #e1ebff;
+            color: #fff;
             padding: 10px 20px;
             border-radius: 35px;
             border: none;
@@ -1096,6 +1118,10 @@ nav {
     }
 
     .slider-section {
+        height: 400px !important;
+    }
+
+    .slider-section {
         padding-top: 0;
 
         .main-swiper {
@@ -1307,7 +1333,13 @@ nav {
 
 
 .book {
+    /* position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: -30%;
+    width: 100%; */
     /* padding: 0rem 7rem; */
+    margin-bottom: 5rem;
 
     .form-container {
         background: #fff;
@@ -1319,7 +1351,7 @@ nav {
         gap: 20px;
         width: 100%;
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-        margin-bottom: 50px;
+        /* margin-bottom: 50px; */
 
         .form-title {
             display: flex;
