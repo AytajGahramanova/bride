@@ -306,8 +306,13 @@ nav {
         align-items: center;
         flex-direction: column;
         justify-content: center;
+        padding: 10px;
 
-        img {
+        .slider-logo img {
+            width: 100%;
+        }
+
+        .slider-text img {
             width: 100%;
         }
     }
@@ -1192,6 +1197,10 @@ nav {
             .details {
                 font-size: 11px;
             }
+        }
+
+        .slider-logo img {
+            max-width: 210px;
         }
     }
 
