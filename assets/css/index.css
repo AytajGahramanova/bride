@@ -1394,6 +1394,10 @@ nav {
                 select {
                     max-width: none !important;
                 }
+
+                .phone-input input {
+                    width: 60%;
+                }
             }
 
             .form-border {
@@ -1485,7 +1489,6 @@ nav {
 
             input {
                 flex: none !important;
-                padding-left: 0 !important;
             }
         }
     }
