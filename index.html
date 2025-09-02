@@ -30,7 +30,9 @@
     <!-- header start -->
     <header class="header">
       <div class="container">
-        <div class="menu-and-logo d-flex align-items-center">
+        <div
+          class="menu-and-logo d-flex align-items-center justify-content-between w-100"
+        >
           <div
             class="responsive-nav-links d-flex flex-column align-items-center d-lg-none"
           >
@@ -46,9 +48,60 @@
               <img src="/assets/images/home/new-logo.png" alt="logo"
             /></a>
           </div>
-          <div></div>
-        </div>
+          <nav class="d-none d-lg-flex">
+            <ul class="nav-links d-none d-lg-flex align-items-center">
+              <li><a class="active-link" href="#">Ana Səhifə</a></li>
+              <li><a href="services.html">Xidmətlər</a></li>
+              <li><a href="#">Kampaniya</a></li>
+              <li><a href="blog.html">Bloq</a></li>
+              <li><a href="contact.html">Əlaqə</a></li>
+            </ul>
+          </nav>
+          <div class="header-search d-none d-lg-flex">
+            <input type="text" placeholder="Axtar" />
+            <button type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <div class="nav-right">
+            <div
+              class="wrapper align-items-center flex-column d-none d-lg-flex"
+            >
+              <div class="icon user">
+                <a href="">
+                  <i class="fa-regular fa-user"></i>
+                </a>
+              </div>
+            </div>
 
+            <div
+              class="wrapper d-none d-lg-flex align-items-center flex-column"
+            >
+              <div class="icon cart">
+                <a href="">
+                  <i class="fa-solid fa-basket-shopping"></i>
+                </a>
+                <div class="count">
+                  <p>0</p>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button
+                class="btn dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Az
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">En</a></li>
+                <li><a class="dropdown-item" href="#">Ru</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
         <div
           class="offcanvas offcanvas-start"
           data-bs-backdrop="static"
@@ -79,89 +132,6 @@
             </ul>
           </div>
         </div>
-        <!-- nav start -->
-        <nav>
-          <ul class="nav-links d-none d-lg-flex align-items-center gap-4">
-            <li><a href="#">Ana Səhifə</a></li>
-            <li><a href="services.html">Xidmətlər</a></li>
-            <li><a href="#">Kampaniya</a></li>
-            <li><a href="blog.html">Bloq</a></li>
-            <li><a href="contact.html">Əlaqə</a></li>
-          </ul>
-        </nav>
-
-        <!-- nav end -->
-        <div class="header-search d-none d-lg-flex">
-          <input type="text" placeholder="Axtar" />
-          <button type="submit">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-        </div>
-        <div class="nav-right">
-          <div class="wrapper d-flex align-items-center flex-column">
-            <div class="icon user">
-              <a href="">
-                <i class="fa-regular fa-user"></i>
-              </a>
-            </div>
-            <!-- <p class="alt-text">My account</p> -->
-          </div>
-          <div
-            class="wrapper d-flex align-items-center flex-column d-none d-lg-flex"
-          >
-            <!-- <div class="icon wishlist">
-              <a href="">
-                <i class="fa-regular fa-heart"></i>
-              </a>
-              <div class="count">
-                <p>0</p>
-              </div>
-            </div> -->
-          </div>
-
-          <div
-            class="wrapper d-flex align-items-center flex-column d-flex d-lg-none"
-          >
-            <div class="icon whatsapp">
-              <a href="tel:+994557150540">
-                <i class="fa-brands fa-whatsapp"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="wrapper d-flex align-items-center flex-column">
-            <div class="icon cart">
-              <a href="">
-                <i class="fa-solid fa-basket-shopping"></i>
-              </a>
-              <div class="count">
-                <p>0</p>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="wrapper d-flex align-items-center flex-column d-flex d-lg-none"
-          >
-            <div class="icon magnifying-glass">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-          </div>
-          <div class="dropdown">
-            <button
-              class="btn dropdown-toggle"
-              type="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Az
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">En</a></li>
-              <li><a class="dropdown-item" href="#">Ru</a></li>
-            </ul>
-          </div>
-        </div>
       </div>
     </header>
     <!-- header end -->
@@ -171,6 +141,33 @@
       <input type="text" placeholder="Axtar" />
     </div>
     <!-- responsive-search end -->
+
+    <!-- Bottom Navbar (mobile) -->
+    <div class="bottom-nav d-block d-lg-none">
+      <div class="d-flex align-items-center justify-content-between p-3">
+        <a href="#" class="active">
+          <i class="fa-solid fa-house"></i>
+          <span>Əsas</span>
+        </a>
+        <a href="#">
+          <i class="fa-solid fa-table-cells"></i>
+          <span>Kateqoriya</span>
+        </a>
+        <a href="#">
+          <i class="fa-solid fa-heart"></i>
+          <span>Bəyəndiklərim</span>
+        </a>
+        <a href="#" class="position-relative">
+          <i class="fa-solid fa-basket-shopping"></i>
+          <span>Səbət</span>
+          <span class="d-flex align-items-center justify-content-center badge-count">0</span>
+        </a>
+        <a href="#">
+          <i class="fa-solid fa-user"></i>
+          <span>Kabinet</span>
+        </a>
+      </div>
+    </div>
 
     <main>
       <!-- slider section start -->
