@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Mark Pro', sans-serif;
 }
 
 a {
@@ -46,38 +47,39 @@ main {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 30px;
-        padding: 20px 0px;
+        padding: 10px 0px;
 
         .header-logo {
             img {
                 width: 100%;
-                max-width: 210px;
+                max-width: 190px;
             }
         }
 
         .header-search {
-            width: 50%;
+            width: 30%;
             position: relative;
 
             input {
                 width: 100%;
                 border-radius: 35px;
-                border: 1px solid rgba(0, 0, 0, 0.1);
+                border: 1px solid #AD0000;
                 padding: 0px 75px 0px 15px;
-                height: 50px;
+                height: 40px;
                 font-size: 15px;
                 outline: none;
                 position: relative;
-                color: #767676;
+                color: #000;
+
+                &::placeholder {
+                    color: #AD0000;
+                }
             }
 
             button {
                 position: absolute;
                 border-radius: 50%;
                 border: none;
-                background-color: #587558;
-                color: #fff;
                 width: 40px;
                 height: 40px;
                 font-size: 20px;
@@ -86,6 +88,11 @@ main {
                 align-items: center;
                 justify-content: center;
                 top: 8%;
+                background-color: transparent;
+
+                i {
+                    color: #AD0000;
+                }
             }
         }
 
@@ -143,8 +150,6 @@ main {
 
 /* nav start */
 nav {
-    background-color: #e6effd;
-
     .container {
         display: flex;
         align-items: center;
@@ -171,13 +176,13 @@ nav {
                 padding: 10px 20px;
             }
 
-            li:hover {
+            /* li:hover {
                 background-color: #B3CBF8;
                 border-radius: 35px;
-            }
+            } */
 
             li:hover a {
-                color: #1c61e7;
+                color: #AD0000;
             }
 
             a {
@@ -185,58 +190,58 @@ nav {
                 font-size: 17px;
             }
         }
+    }
+}
 
-        .nav-right {
-            display: flex;
-            align-items: center;
-            gap: 20px;
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 3px;
 
-            .icon {
-                width: 40px;
-                height: 40px;
-                background: white;
-                border-radius: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-size: 17px;
-                color: #333;
-            }
+    .icon {
+        width: 40px;
+        height: 40px;
+        background: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 17px;
+        color: #333;
+    }
 
-            .wishlist {
-                position: relative;
-            }
+    .wishlist {
+        position: relative;
+    }
 
-            .cart {
-                position: relative;
-                background-color: #fff;
+    .cart {
+        position: relative;
+        background-color: #fff;
 
-                i {
-                    color: #000;
-                }
-            }
-
-            .count {
-                position: absolute;
-                color: #1c61e7;
-                width: 16px;
-                height: 16px;
-                background-color: #fff;
-                border-radius: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                right: -6%;
-                top: -4%;
-                font-size: 13px;
-                box-shadow: 0 0 4px rgba(0, 0, 0, 0.17);
-
-            }
-
-            .alt-text {
-                font-size: 13px;
-            }
+        i {
+            color: #000;
         }
+    }
+
+    .count {
+        position: absolute;
+        color: #1c61e7;
+        width: 16px;
+        height: 16px;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: -6%;
+        top: -4%;
+        font-size: 13px;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.17);
+
+    }
+
+    .alt-text {
+        font-size: 13px;
     }
 }
 
