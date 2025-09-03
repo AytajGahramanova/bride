@@ -38,7 +38,11 @@ main {
 }
 
 .dropdown-menu {
-    --bs-dropdown-min-width: 0
+    --bs-dropdown-min-width:
+}
+
+.btn {
+    --bs-btn-padding-x: 0rem !important;
 }
 
 /* header start */
@@ -941,19 +945,22 @@ nav {
         display: flex;
         margin: 0;
         min-width: 160px;
-        width: 166px;
+        width: 110px;
         justify-content: center;
         align-items: center;
         background-color: #AD0000;
         color: #fff;
         font-size: 16px;
-        font-weight: 700;
+        font-weight: 500;
         padding: 10px 25px;
         border-radius: 23px;
         height: 40px;
         border: none;
         column-gap: 10px;
         cursor: pointer;
+        a{
+            color: #fff;
+        }
     }
 
     .dropdown-menu.show {
@@ -1006,7 +1013,7 @@ nav {
 
 /* products section start */
 .products-section {
-    margin-bottom: 60px;
+    margin-bottom: 10rem;
 
     .more-products {
         button {
@@ -1460,7 +1467,7 @@ nav {
     }
 
     .book {
-        top: 36rem !important;
+        top: 33rem !important;
 
         .form-container {
             padding: 25px !important;
